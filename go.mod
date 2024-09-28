@@ -2,8 +2,6 @@ module github.com/oam-dev/kubevela
 
 go 1.22.0
 
-toolchain go1.23.1
-
 require (
 	cuelang.org/go v0.9.2
 	github.com/AlecAivazis/survey/v2 v2.1.1
@@ -311,9 +309,9 @@ replace (
 	github.com/docker/cli => github.com/docker/cli v24.0.9+incompatible
 	github.com/docker/docker => github.com/docker/docker v24.0.9+incompatible
 	github.com/docker/docker-credential-helpers => github.com/docker/docker-credential-helpers v0.7.0
-	github.com/kubevela/pkg => ../kubevela-pkg // TODO: update me once pkg is merged
-	github.com/kubevela/workflow => ../workflow // TODO: update me once workflow is merged
-	github.com/oam-dev/cluster-gateway => ../cluster-gateway // TODO: update me once cluster-gateway is merged
+	github.com/kubevela/pkg => github.com/phantomnat/pkg v0.0.0-20240924054914-81ec82fb40f6 // TODO: update me once pkg is merged
+	github.com/kubevela/workflow => github.com/phantomnat/workflow v0.0.0-20240924115359-b3636d4c791b // TODO: update me once workflow is merged
+	github.com/oam-dev/cluster-gateway => github.com/phantomnat/cluster-gateway v0.0.0-20240927162029-3112ccc35344 // TODO: update me once cluster-gateway is merged
 	github.com/wercker/stern => github.com/oam-dev/stern v1.13.2
 	sigs.k8s.io/apiserver-network-proxy/konnectivity-client => sigs.k8s.io/apiserver-network-proxy/konnectivity-client v0.0.36
 	sigs.k8s.io/apiserver-runtime => github.com/kmodules/apiserver-runtime v1.1.2-0.20240303184316-6365e03bf9ac
